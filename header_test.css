@@ -48,15 +48,15 @@ ul {
 
 .dropbutton {
   display: inline-block;
+  cursor: pointer;
+  padding: 16px 16px 16px;
+  line-height: 20px;
   color: #A1A9B5;
   text-align: right;
   text-decoration: none;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0;
-  line-height: 20px;
-  padding: 16px 16px 16px;
-  cursor: pointer;
 }
 
 #icon_arrow {
@@ -111,5 +111,12 @@ ul {
 .showMenu {
   display: block;
 }
+
+.dropdown_open_style {
+  color: #ffffff;
+}
+
+
+
 
 
