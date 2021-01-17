@@ -5,32 +5,31 @@
   <title>Test task for Hapara</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
-  <link rel="stylesheet" href="header_test.css">
-  <script src="header_test.js"></script>
+  
+  <link rel="stylesheet" href="header.css">
+  <script src="dropdown_toggle.js"></script>
+  <script src="user_switch.js"></script>
 </head>
 
 <body>
   <ul>
-    <li id="icon_logo"><a href="#">
+    <li id="icon_logo"><a href="#logo">
       <img src="logo.svg"></a>
     </li>
-    <li id="header_menu_classes" class="header_menu"><a href="#">Classes</a></li>
-    <li class="header_menu"><a href="#">Lessons</a></li>
-    <li class="header_menu"><a href="#">Libraries</a></li>
+    <li><a id="header_menu_classes" href="#classes">Classes</a></li>
+    <li><a class="header_menu" href="#lessons">Lessons</a></li>
+    <li><a class="header_menu" href="#libraries">Libraries</a></li>
     
 	<li class="dropdown">
-      <div onclick="toggleMenu()" class="dropbutton" id='account_name'>teacher@school.org
-		<img src="arrow_down.svg" id="icon_arrow">
+      <div class="dropbutton" onclick="toggleMenu()">teacher@school.org<img src="arrow_down.svg" id="icon_arrow">
 	  </div>
       <div class="dropdown-content" id="toggling_elem">
-        <a href="#" id="drop1">student@school.org</a>
+        <span id="user_to_choose" onclick="changeUser()">student@school.org</span>
         <a href="#" id="drop2">Settings</a>
         <a href="#" id="drop3">Sign out</a>
       </div>
     </li>
-	
   </ul>
-
 </body>
 </html>
 
